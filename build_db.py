@@ -31,7 +31,7 @@ with open(fname) as csv_file:
         account_name = row[2]
         date = row[3]
         transaction_info = row[4]
-        transaction_type = 'unpack Tuple'
+        transaction_type = 'unpack Tuple'  # TODO: need to unpack tuple inside this column because it messes up database when not extracted.
         amount = row[8]
         balance = row[9]
         print(row)
