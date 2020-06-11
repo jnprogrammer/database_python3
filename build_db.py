@@ -24,6 +24,7 @@ fname = "bnk-prod.csv"
 
 # TODO: export data to database
 with open(fname) as csv_file:
+    csv_file.readline()
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         account_number = row[0]
